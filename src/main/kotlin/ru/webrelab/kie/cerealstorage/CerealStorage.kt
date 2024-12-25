@@ -50,9 +50,4 @@ interface CerealStorage {
      * @return количество крупы, которое может вместить контейнер с учётом его текущей заполненности
      */
     fun getSpace(cereal: Cereal): Float
-
-    /**
-     * @return текстовое представление
-     */
-    override fun toString(): String
 }
