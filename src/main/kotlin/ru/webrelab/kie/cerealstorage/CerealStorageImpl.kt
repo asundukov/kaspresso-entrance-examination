@@ -63,10 +63,10 @@ class CerealStorageImpl(
     override fun getAmount(cereal: Cereal) = storage[cereal] ?: 0f
 
     override fun getSpace(cereal: Cereal) = if (storage.containsKey(cereal)) {
-                containerCapacity - storage[cereal]!!
-            } else {
-                0f
-            }
+        containerCapacity - storage[cereal]!!
+    } else {
+        0f
+    }
 
     override fun toString(): String = "CerealStorageImpl(storage=$storage)"
 }
